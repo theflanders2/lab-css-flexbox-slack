@@ -8,3 +8,969 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+html {
+    font-size: 10px;
+}
+
+/* Iteration 1 | Mobile Screens (width < 768px) */
+@media (max-width: 767px) {
+    body {
+        /* display: flex;
+        flex-direction: column; */
+        background-color: #540B51;
+    }
+    
+    nav {
+        display: flex;
+        padding-left: 20px;
+        padding-top: 20px;
+        justify-content: space-between;
+    }
+    
+    #main-logo {
+        height: 30px;
+    }
+    
+    nav ul {
+        display: none;
+    }
+    
+    #menu-button button img {
+        height: 30px;
+    }
+    
+    .nav-button {
+        background: none;
+        border: none;
+        margin-right: 20px;
+    }
+    
+    #hamburger-menu {
+        display: block;
+    }
+    
+    header,
+    header div {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header div h1,
+    header div p {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    
+    header h1 {
+        font-size: 9rem;
+    }
+    
+    header p {
+        font-size: 3.5rem;
+    }
+    
+    header h1,
+    header p {
+        color: #FFF;
+        text-align: center;
+    }
+    
+    .sign-up-button {
+        height: 100px;
+        margin-bottom: 15px;
+        font-size: 3rem;
+        text-align: center;
+        color: #540B51;
+    }
+    
+    #sign-up-email,
+    #sign-up-google {
+        font-variant-caps: all-small-caps;
+        width: 98vw;
+        margin-left: 8px;
+    
+    }
+    
+    header div button img {
+        background-color: #FFF;
+        height: 80px;
+    }
+    
+    #sign-up-google {
+        background-color: #4285F4;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #FFF;
+    }
+    
+    #google-button {
+        display: flex;
+        margin-right: 255px;
+    }
+    
+    #logo-block {
+        background-color: #F3EAE2;
+    }
+    
+    #logo-block p {
+        text-align: center;
+        font-size: 3.7rem;
+        font-variant-caps: all-small-caps;
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+    
+    #logo-block div {
+        display: flex;
+        width: 100vw;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-bottom: 70px;
+    }
+    
+    #logo-block img {
+        height: 60px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    #connectedness,
+    #team-section,
+    #speed-section {
+        background-color: #F3EAE2;
+    }
+    
+    #connectedness img,
+    #team-section img,
+    #speed-section img {
+        width: 100vw;
+        padding-top: 40px;
+    }
+    
+    #connected-team,
+    #team-flexibility,
+    #speed-tools {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+        padding-left: 40px;
+        padding-bottom: 80px;
+    }
+    
+    #connected-team h2,
+    #team-flexibility h2,
+    #speed-tools h2,
+    #slack-enterprise h3 {
+        font-size: 5rem;
+    }
+    
+    #connected-team p,
+    #team-flexibility p,
+    #speed-tools p {
+        font-size: 3rem;
+        padding-top: 30px;
+        margin-bottom: 20px;
+    }
+    
+    #connected-team span,
+    #team-flexibility span,
+    #speed-tools span {
+        font-size: 2rem;
+    }
+    
+    #slack-enterprise {
+        background-color: #FFF;
+        padding-top: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #enterprise-security {
+        font-size: 2rem;
+    }
+    #enterprise-button {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    
+    #enterprise-button button {
+        height: 70px;
+        width: 98vw;
+        margin-top: 10px;
+        font-size: 3rem;
+        font-variant-caps: all-small-caps;
+    }
+    
+    .enterprise-meet,
+    #digital-button {
+        background-color: #540B51;
+        color: #FFF;
+    }
+    
+    .enterprise-talk,
+    #digital-try-button {
+        color: #540B51;
+        background-color: #FFF;
+    }
+    
+    #slack-enterprise ul {
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 30px;
+        margin-bottom: 100px;
+    }
+    
+    .percentages {
+        font-size: 7rem;
+        margin-top: 70px;
+        color: #540B51;
+    }
+    
+    #slack-digital {
+        background-color: #540B51;
+        color: #FFF;
+        /* padding-top: 120px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 5rem;
+    }
+    
+    #slack-digital h3 {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+    
+    #slack-digital button {
+        height: 70px;
+        width: 98vw;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 3rem;
+        font-variant-caps: all-small-caps;
+    }
+    
+    footer {
+        background-color: #FFF;
+        padding-top: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #footer-logo {
+        width: 80px;
+        padding-left: 50px;
+    }
+    
+    #footer-div {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 30px;
+        font-size: 2rem;
+        margin-bottom: 100px;
+    }
+    
+    .footer-list li {
+        color: #454245;
+        margin-top: 10px;
+    }
+    
+    .footer-heading {
+        color: #000;
+    }
+    
+    #footer-company-list {
+        font-size: 2rem;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    
+    #footer-company-list li {
+        margin-top: 50px;
+    }
+    
+    #social-logos {
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 30px 50px 30px;
+    }
+    
+    .fab {
+        height: 40px;
+    }
+    
+    footer div small {
+        font-size: 2rem;
+        display: flex;
+        color: #454245;
+        margin-bottom: 50px;
+        margin-left: 50px;
+        text-align: left;
+    }
+}
+
+
+
+/* Iteration 2 | Small Screens (width > 768px and width < 1024px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        background-color: #540B51;
+    }
+    
+    nav {
+        display: flex;
+        padding-left: 20px;
+        padding-top: 20px;
+        justify-content: space-between;
+    }
+    
+    #main-logo {
+        height: 30px;
+    }
+    
+    nav ul {
+        display: none;
+    }
+    
+    #menu-button button img {
+        height: 30px;
+    }
+    
+    .nav-button {
+        background: none;
+        border: none;
+        margin-right: 20px;
+    }
+    
+    #hamburger-menu {
+        display: block;
+    }
+    
+    header {
+        display: flex;
+    }
+
+    /* header div {
+        display: flex;
+        flex-direction: column;
+    } */
+    
+    header div h1,
+    header div p {
+        /* display: flex;
+        flex-direction: column; */
+        margin-bottom: 30px;
+        margin-top: 30px;
+        margin-left: 30px;
+        text-align: left;
+    }
+    
+    header h1 {
+        font-size: 13rem;
+    }
+    
+    header p {
+        font-size: 3.5rem;
+    }
+    
+    header h1,
+    header p {
+        color: #FFF;
+        text-align: center;
+    }
+    
+    .sign-up-button {
+        height: 60px;
+        margin-bottom: 15px;
+        margin-left: 30 px;
+        font-size: 3rem;
+        text-align: center;
+        color: #540B51;
+    }
+    
+    #sign-up-email,
+    #sign-up-google {
+        font-variant-caps: all-small-caps;
+        width: 500px;
+        margin-left: 8px;
+    
+    }
+
+    #header-buttons {
+        margin-left: 20px;
+    }
+    
+    header div button img {
+        background-color: #FFF;
+        width: 40px;
+    }
+    
+    #sign-up-google {
+        background-color: #4285F4;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #FFF;
+    }
+    
+    #google-button {
+        margin-right: 115px;
+    }
+
+    header img {
+        width: 400px;
+    }
+    
+    #logo-block {
+        background-color: #F3EAE2;
+    }
+    
+    #logo-block p {
+        text-align: center;
+        font-size: 3.7rem;
+        font-variant-caps: all-small-caps;
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+    
+    #logo-block div {
+        display: flex;
+        width: 100vw;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-bottom: 70px;
+    }
+    
+    #logo-block img {
+        height: 50px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    #connectedness,
+    #team-section,
+    #speed-section {
+        background-color: #F3EAE2;
+    }
+    
+    #connectedness img,
+    #team-section img,
+    #speed-section img {
+        width: 100vw;
+        padding-top: 40px;
+    }
+    
+    #connected-team,
+    #team-flexibility,
+    #speed-tools {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+        padding-left: 40px;
+        padding-bottom: 80px;
+    }
+    
+    #connected-team h2,
+    #team-flexibility h2,
+    #speed-tools h2,
+    #slack-enterprise h3 {
+        font-size: 5rem;
+    }
+    
+    #connected-team p,
+    #team-flexibility p,
+    #speed-tools p {
+        font-size: 3rem;
+        padding-top: 30px;
+        margin-bottom: 20px;
+    }
+    
+    #connected-team span,
+    #team-flexibility span,
+    #speed-tools span {
+        font-size: 2rem;
+    }
+    
+    #slack-enterprise {
+        background-color: #FFF;
+        padding-top: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #enterprise-security {
+        font-size: 2rem;
+    }
+    #enterprise-button {
+        display: flex;
+        padding-top: 20px;
+    }
+    
+    #enterprise-button button {
+        height: 70px;
+        width: 400px;
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 3rem;
+        font-variant-caps: all-small-caps;
+    }
+    
+    .enterprise-meet,
+    #digital-button {
+        background-color: #540B51;
+        color: #FFF;
+    }
+    
+    .enterprise-talk,
+    #digital-try-button {
+        color: #540B51;
+        background-color: #FFF;
+    }
+    
+    #slack-enterprise ul {
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 30px;
+        margin-bottom: 100px;
+        display: flex;
+    }
+    
+    .percentages {
+        font-size: 7rem;
+        margin-top: 70px;
+        color: #540B51;
+    }
+    
+    #slack-digital {
+        background-color: #540B51;
+        color: #FFF;
+        /* padding-top: 120px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 5rem;
+    }
+    
+    #slack-digital h3 {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+    
+    #slack-digital button {
+        height: 70px;
+        width: 98vw;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 3rem;
+        font-variant-caps: all-small-caps;
+    }
+    
+    footer {
+        background-color: #FFF;
+        padding-top: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #footer-logo {
+        width: 80px;
+        padding-left: 50px;
+    }
+    
+    #footer-div {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 30px;
+        font-size: 2rem;
+        margin-bottom: 100px;
+    }
+    
+    .footer-list li {
+        color: #454245;
+        margin-top: 10px;
+    }
+    
+    .footer-heading {
+        color: #000;
+    }
+    
+    #footer-company-list {
+        font-size: 2rem;
+        margin-top: 30px;
+        margin-left: 30px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #footer-company-list li {
+        margin-top: 50px;
+    }
+    
+    #social-logos {
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 30px 50px 30px;
+    }
+    
+    .fab {
+        height: 40px;
+    }
+    
+    footer div small {
+        font-size: 2rem;
+        display: flex;
+        color: #454245;
+        margin-bottom: 50px;
+        margin-left: 50px;
+        text-align: left;
+    }
+}
+
+
+/* Iteration 3 | Medium Screens (width > 1024px and width < 1440px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        background-color: #540B51;
+    }
+    
+    nav {
+        display: flex;
+        padding-left: 20px;
+        padding-top: 20px;
+        justify-content: space-between;
+    }
+    
+    #main-logo {
+        height: 30px;
+    }
+    
+    nav ul {
+        display:flex;
+        font-size: 3rem;
+    }
+
+    .top-menu {
+        margin-left: 150px;
+    }
+    
+    #menu-button button img {
+        height: 30px;
+    }
+    
+    .nav-button {
+        background: none;
+        border: none;
+        margin-right: 20px;
+    }
+    
+    #hamburger-menu {
+        display: none;
+    }
+    
+    header {
+        display: flex;
+    }
+
+    /* header div {
+        display: flex;
+        flex-direction: column;
+    } */
+    
+    header div h1,
+    header div p {
+        /* display: flex;
+        flex-direction: column; */
+        margin-bottom: 30px;
+        margin-top: 30px;
+        margin-left: 30px;
+        text-align: left;
+    }
+    
+    header h1 {
+        font-size: 17rem;
+    }
+    
+    header p {
+        font-size: 3.5rem;
+    }
+    
+    header h1,
+    header p {
+        color: #FFF;
+        text-align: center;
+    }
+    
+    .sign-up-button {
+        height: 60px;
+        margin-bottom: 15px;
+        margin-left: 30 px;
+        font-size: 3rem;
+        text-align: center;
+        color: #540B51;
+    }
+    
+    #sign-up-email,
+    #sign-up-google {
+        font-variant-caps: all-small-caps;
+        width: 500px;
+        margin-left: 8px;
+    
+    }
+
+    #header-buttons {
+        margin-left: 20px;
+    }
+    
+    header div button img {
+        background-color: #FFF;
+        width: 40px;
+    }
+    
+    #sign-up-google {
+        background-color: #4285F4;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #FFF;
+    }
+    
+    #google-button {
+        margin-right: 115px;
+    }
+
+    header img {
+        width: 400px;
+    }
+    
+    #logo-block {
+        background-color: #F3EAE2;
+    }
+    
+    #logo-block p {
+        text-align: center;
+        font-size: 3.7rem;
+        font-variant-caps: all-small-caps;
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+    
+    #logo-block div {
+        display: flex;
+        width: 100vw;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-bottom: 70px;
+    }
+    
+    #logo-block img {
+        height: 50px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    #connectedness,
+    #team-section,
+    #speed-section {
+        background-color: #F3EAE2;
+    }
+    
+    #connectedness img,
+    #team-section img,
+    #speed-section img {
+        width: 700px;
+        padding-top: 40px;
+    }
+
+    #connectedness img {
+        float: inline-start;
+    }
+    
+    #team-section img {
+        float: inline-end;
+    }
+
+    #speed-section img {
+        float: none;
+    }
+    
+    #connected-team,
+    #team-flexibility,
+    #speed-tools {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+        padding-left: 40px;
+        padding-bottom: 80px;
+    }
+    
+    #connected-team h2,
+    #team-flexibility h2,
+    #speed-tools h2,
+    #slack-enterprise h3 {
+        font-size: 5rem;
+    }
+    
+    #connected-team p,
+    #team-flexibility p,
+    #speed-tools p {
+        font-size: 3rem;
+        padding-top: 30px;
+        margin-bottom: 20px;
+    }
+    
+    #connected-team span,
+    #team-flexibility span,
+    #speed-tools span {
+        font-size: 2rem;
+    }
+    
+    #slack-enterprise {
+        background-color: #FFF;
+        padding-top: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #enterprise-security {
+        font-size: 2rem;
+    }
+    #enterprise-button {
+        display: flex;
+        padding-top: 20px;
+    }
+    
+    #enterprise-button button {
+        height: 70px;
+        width: 400px;
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 3rem;
+        font-variant-caps: all-small-caps;
+    }
+    
+    .enterprise-meet,
+    #digital-button {
+        background-color: #540B51;
+        color: #FFF;
+    }
+    
+    .enterprise-talk,
+    #digital-try-button {
+        color: #540B51;
+        background-color: #FFF;
+    }
+    
+    #slack-enterprise ul {
+        text-align: center;
+        font-size: 2.5rem;
+        padding-top: 30px;
+        margin-bottom: 100px;
+        display: flex;
+    }
+    
+    .percentages {
+        font-size: 7rem;
+        margin-top: 70px;
+        color: #540B51;
+    }
+    
+    #slack-digital {
+        background-color: #540B51;
+        color: #FFF;
+        /* padding-top: 120px; */
+        /* display: flex;
+        flex-direction: column; */
+        align-items: center;
+        font-size: 8rem;
+        text-align: center;
+    }
+    
+    #slack-digital h3 {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+    
+    #slack-digital button {
+        height: 70px;
+        width: 400px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 3rem;
+        font-variant-caps: all-small-caps;
+    }
+    
+    footer {
+        background-color: #FFF;
+        padding-top: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #footer-logo {
+        width: 80px;
+        padding-left: 50px;
+    }
+    
+    #footer-div {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 30px;
+        font-size: 3rem;
+        margin-bottom: 100px;
+    }
+    
+    .footer-list li {
+        color: #454245;
+        margin-top: 10px;
+    }
+    
+    .footer-heading {
+        color: #000;
+    }
+    
+    #footer-company-list {
+        font-size: 2.5rem;
+        margin-top: 30px;
+        margin-left: 30px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #footer-company-list li {
+        margin-top: 50px;
+    }
+    
+    #social-logos {
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 30px 50px 30px;
+    }
+    
+    .fab {
+        height: 40px;
+    }
+    
+    footer div small {
+        font-size: 2rem;
+        display: flex;
+        color: #454245;
+        margin-bottom: 50px;
+        margin-left: 50px;
+        text-align: left;
+    }
+}
